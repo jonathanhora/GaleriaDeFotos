@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.painel{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.painel .img{width: 33.3%;}
+
+img{
+    width: 100%;
+    max-width: 430px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .painel .img{width: 50%;}
+}
+
+@media screen and (max-width: 768px){
+    .painel .img{width: 50%;}
+}
+
+@media screen and (max-width: 580px){
+    .painel .img{
+        width: 100%;
+    }
+}
